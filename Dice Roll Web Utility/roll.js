@@ -9,9 +9,9 @@ const rl = readline.createInterface({
 
     var a = 0;
     var b = 0;
-    rl.question("How many sides does the dice have?", (answer1) => {
+    rl.question("How many sides does the dice have? ", (answer1) => {
         a = answer1;
-        rl.question("How many times do you want to roll the dice?", (answer2) => {
+        rl.question("How many times do you want to roll the dice? ", (answer2) => {
         b = answer2;
         diceRoll(b, a);
         rl.close();
@@ -28,5 +28,3 @@ function diceRoll (n, sides) {
         console.log("Total : " + rollTotal);
     }
 }
-
-diceRoll();
